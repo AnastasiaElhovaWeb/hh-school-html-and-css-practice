@@ -1,0 +1,29 @@
+.advantage-item {
+
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+
+  &__image-container {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    flex: none;
+
+    @media @screen-gt-s {
+      margin-right: 10px;
+    }
+
+    @media @screen-gt-m {
+      width: 50px;
+      height: 50px;
+      margin-right: 30px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+}
