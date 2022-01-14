@@ -318,36 +318,7 @@ body {
 .footer-social-icon_vk {
   background-image: url('vk.7ffcf2f2.svg');
 }
-.footer__download-container {
-  display: flex;
-  margin-top: 30px;
-}
-@media (min-width: 768px) {
-  .footer__download-container {
-    margin-top: 0;
-  }
-}
-.footer__download ~ .footer__download {
-  margin-left: 10px;
-}
-@media (min-width: 768px) {
-  .footer__download ~ .footer__download {
-    margin-left: 8px;
-  }
-}
-.footer-download-link {
-  display: block;
-  width: calc(160px - (5px + 15px));
-  height: 40px;
-}
-.footer-download-link_appstore {
-  background-image: url('appstore.874e9d88.svg');
-}
-.footer-download-link_googleplay {
-  background-image: url('googleplay.c74c1ed5.svg');
-}
 .footer__separator {
-  width: 100%;
   height: 1px;
   margin: 30px 0 15px;
   background-color: #666666;
@@ -359,7 +330,7 @@ body {
 }
 .footer__promo {
   color: #999999;
-  line-height: 24px;
+  line-height: 1.71;
 }
 @media (min-width: 768px) {
   .footer__top {
@@ -432,16 +403,16 @@ body {
     padding-bottom: 40px;
   }
 }
-.section-advantages {
+.section-content_bg-color_gray {
+  background-color: #E5E5E5;
+}
+.section-content_padding_small {
   padding: 15px 0;
 }
 @media (min-width: 1000px) {
-  .section-advantages {
+  .section-content_padding_small {
     padding: 25px 0;
   }
-}
-.section-advantages_bg-color_gray {
-  background-color: #E5E5E5;
 }
 .product-card {
   display: block;
@@ -508,6 +479,36 @@ body {
 .advantage-item__image {
   width: 100%;
   height: auto;
+}
+.download__container {
+  display: flex;
+}
+.download__container_margin-mobile {
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .download__container_margin-mobile {
+    margin-top: 0;
+  }
+}
+.download__block ~ .download__block {
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  .download__block ~ .download__block {
+    margin-left: 8px;
+  }
+}
+.download__link {
+  display: block;
+  width: calc(160px - (5px + 15px));
+  height: 40px;
+}
+.download__link_appstore {
+  background-image: url('appstore.79562989.svg');
+}
+.download__link_googleplay {
+  background-image: url('googleplay.079efdc6.svg');
 }
 
 /*# sourceMappingURL=index.7405850c.css.map */
