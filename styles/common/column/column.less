@@ -3,7 +3,7 @@
 @column-count-l: 12;
 
 .column-wrapper {
-    padding: 0 15px;
+    padding: 0 @column-wrapper-padding;
 
     @media @screen-gt-s {
         width: @column-width-m * @column-count-m - @column-padding-m * 2;
@@ -56,4 +56,16 @@ each(range(@column-count-s), {
             width: @column-width-l * @value;
         }
     })
+}
+
+.column_m-0 {
+    @media @screen-only-m {
+        display: none;
+    }
+}
+
+.column_l-0 {
+    @media @screen-only-l {
+        display: none;
+    }
 }
