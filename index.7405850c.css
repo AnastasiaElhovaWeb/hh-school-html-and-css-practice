@@ -480,34 +480,34 @@ body {
   width: 100%;
   height: auto;
 }
-.download__container {
+.download-container {
   display: flex;
 }
-.download__container_margin-mobile {
+.download-container_margin-mobile {
   margin-top: 30px;
 }
 @media (min-width: 768px) {
-  .download__container_margin-mobile {
+  .download-container_margin-mobile {
     margin-top: 0;
   }
 }
-.download__block ~ .download__block {
+.download-block ~ .download-block {
   margin-left: 10px;
 }
 @media (min-width: 768px) {
-  .download__block ~ .download__block {
+  .download-block ~ .download-block {
     margin-left: 8px;
   }
 }
-.download__link {
+.download-link {
   display: block;
   width: calc(160px - (5px + 15px));
   height: 40px;
 }
-.download__link_appstore {
+.download-link_appstore {
   background-image: url('appstore.79562989.svg');
 }
-.download__link_googleplay {
+.download-link_googleplay {
   background-image: url('googleplay.079efdc6.svg');
 }
 
