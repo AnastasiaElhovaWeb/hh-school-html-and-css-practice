@@ -1,0 +1,35 @@
+.download {
+  &__container {
+    display: flex;
+
+    &_margin-mobile {
+      margin-top: 30px;
+
+      @media @screen-gt-s {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__block ~ &__block {
+    margin-left: @column-padding-s * 2;
+
+    @media @screen-gt-s {
+      margin-left: 8px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: calc(160px - (@column-padding-s + @column-wrapper-padding));
+    height: 40px;
+
+    @icons: appstore, googleplay;
+    each(@icons, {
+      &_@{value} {
+        background-image: url('@{value}.svg');
+      }
+    })
+  }
+}
+
