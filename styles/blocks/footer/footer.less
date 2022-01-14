@@ -1,0 +1,95 @@
+.footer {
+
+  background-color: #212122;
+  color: #fff;
+  padding: 30px 0 20px;
+  @media @screen-gt-s {
+    padding-bottom: 30px;
+  }
+  @media @screen-gt-m {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+
+  &__socials-container {
+    display: flex;
+  }
+
+  &__social ~ &__social {
+    margin-left: 15px;
+  }
+
+  &-social-icon {
+    display: block;
+    width: 36px;
+    height: 36px;
+
+    @icons: fb, inst, tw, vk;
+    each(@icons, {
+      &_@{value} {
+        background-image: url('@{value}.svg');
+      }
+    })
+  }
+
+  &__download-container {
+    display: flex;
+    margin-top: 30px;
+    @media @screen-gt-s {
+      margin-top: 0;
+    }
+  }
+
+  &__download ~ &__download {
+    margin-left: @column-padding-s * 2;
+    @media @screen-gt-s {
+      margin-left: 8px;
+    }
+  }
+
+  &-download-link {
+    display: block;
+    width: calc(160px - (@column-padding-s + @column-wrapper-padding));
+    height: 40px;
+
+    @icons: appstore, googleplay;
+    each(@icons, {
+      &_@{value} {
+        background-image: url('@{value}.svg');
+      }
+    })
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    margin: 30px 0 15px;
+    background-color: @gray-dark;
+    @media @screen-gt-s {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__promo {
+    color: @gray-light;
+    line-height: 24px;
+  }
+
+  &__top {
+    @media @screen-gt-s {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    display: none;
+    margin-left: auto;
+    @media @screen-gt-m {
+      display: block;
+    }
+  }
+
+
+}
